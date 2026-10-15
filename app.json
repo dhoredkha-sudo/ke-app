@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Ke",
+    "slug": "ke",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "ke",
+    "owner": "dhoreme",
+    "backgroundColor": "#08080D",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Ke uses your camera for video calls and photo sharing.",
+        "NSMicrophoneUsageDescription": "Ke uses your microphone for calls and voice messages."
+      }
+    },
+    "android": {
+      "package": "com.dhoreme.ke",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Ke to access your photos.",
+          "cameraPermission": "Allow Ke to access your camera."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Ke to access your camera."
+        }
+      ],
+      "@livekit/react-native"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c00ad078-12a2-4f17-a10b-684ca985a46e"
+      },
+      "supabaseUrl": "https://lwsrroxcyanixrondczr.supabase.co",
+      "supabaseKey": "sb_publishable_fU_c1WSDb8USSQRIq4JLog_vyp1KbSC",
+      "livekitUrl": "wss://ke-omvez0ro.livekit.cloud"
+    }
+  }
+}
